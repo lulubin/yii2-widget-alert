@@ -1,0 +1,24 @@
+{
+    "name": "lulubin/yii2-widget-alert",
+    "description": "An Yii2 widget for alert after create or update successfully",
+    "keywords": ["yii2", "extension", "widget", "alert"],
+    "homepage": "https://github.com/lulubin/yii2-widget-alert",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lulubin",
+            "email": "452936616@qq.com",
+            "homepage": "https://lulublog.cn/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lulubin\\alert\\": ""
+        }
+    }
+}
