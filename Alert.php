@@ -12,7 +12,7 @@ class Alert extends \yii\bootstrap5\Widget
         'warning' => 'alert-warning'
     ];
 
-    public function init()
+    public function init(): void
     {
         parent::init();
         $session = \Yii::$app->getSession();
@@ -24,7 +24,7 @@ class Alert extends \yii\bootstrap5\Widget
                 foreach ($data as $i => $message) {
                     $this->options['class'] = $this->alertTypes[$type] . $appendCss;
                     $this->options['id'] = $this->getId() . '-' . $type . '-' . $i;
-                    echo \yii\bootstrap\Alert::widget([
+                    echo \yii\bootstrap5\Alert::widget([
                         'body' => $message,
                         'closeButton' => $this->closeButton,
                         'options' => $this->options,
