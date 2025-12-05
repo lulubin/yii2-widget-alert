@@ -1,7 +1,7 @@
 <?php
 namespace lulubin\alert;
 
-class Alert extends \yii\bootstrap\Widget
+class Alert extends \yii\bootstrap5\Widget
 {
     public $closeButton = [];
     public $alertTypes = [
